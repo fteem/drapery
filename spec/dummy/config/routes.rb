@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  mount Drapery::Engine => "/drapery"
+  mount Drapery::Engine => "/"
 end
