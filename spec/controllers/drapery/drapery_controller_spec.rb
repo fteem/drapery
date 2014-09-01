@@ -1,7 +1,4 @@
-require 'rails_helper'
+require 'spec_helper'
 
 module Drapery
-  RSpec.describe DraperyController, :type => :controller do
-  
-  end
 end
