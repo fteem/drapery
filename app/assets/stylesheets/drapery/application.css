@@ -11,3 +11,45 @@
  *= require_self
  *= require_tree .
  */
+
+html, body {
+  padding: 0 auto;
+  margin: 0 auto;
+  height:100%;
+}
+
+.container {
+  background: url(bg1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  min-height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 7em;
+}
+
+.white {
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
