@@ -107,3 +107,17 @@ form.subscribe-form input[type=submit]:hover {
   margin: 0 auto;
   margin-top: 200px;
 }
+
+.flash-notice {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-size: 16px;
+}
+
+.flash-error {
+  color: #d42a2a;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-size: 16px;
+}

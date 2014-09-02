@@ -8,4 +8,12 @@
     <%= f.text_field :email %>
     <%= f.submit "Subscribe" %>
   <% end %>
+
+  <div class='flash-notice'>
+    <%= flash[:notice] %>
+  </div>
+
+  <div class='flash-error'>
+    <%= flash[:error] %>
+  </div>
 </div>

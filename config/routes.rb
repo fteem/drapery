@@ -1,4 +1,4 @@
 Drapery::Engine.routes.draw do
-  resources :subscriptions
-  match '*path', to: 'drapery#index'
+  get :drapery, to: 'drapery#index'
+  post :subscriptions, to: 'subscriptions#create'
 end
