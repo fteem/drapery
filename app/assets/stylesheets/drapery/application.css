@@ -64,7 +64,7 @@ form.subscribe-form input[type=text] {
   height: 30px;
   width: 500px;
   display: inline-block;
-  padding: 10px;
+  padding: 10px 20px;
   outline: none;
   text-transform: uppercase;
   letter-spacing: 1.3px;
