@@ -14,42 +14,96 @@
 
 html, body {
   padding: 0 auto;
-  margin: 0 auto;
-  height:100%;
+  margin:  0 auto;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-  background: url(bg1.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  min-height: 100%;
-}
-
-.overlay {
-  position: absolute;
-  background-color: black;
-  opacity: 0.5;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
+body {
+  background: url('bg.jpg') center center fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
+  padding: 0 auto;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3em;
 }
 
 h3 {
-  font-size: 7em;
+  font-size: 1.5em;
+}
+
+.container {
+  margin-top: 60px;
+}
+
+.center {
+  text-align: center;
 }
 
 .white {
   color: white;
 }
 
-.center {
+form.subscribe-form {
+  margin-top: 20px;
+}
+
+form.subscribe-form input[type=text] {
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid #e62d2d;
+  color: white;
+  font-size: 16px;
+  height: 30px;
+  width: 500px;
+  display: inline-block;
+  padding: 10px;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+form.subscribe-form input[type=text]:focus {
+  border-color: #d42a2a;
+}
+
+form.subscribe-form input[type=submit] {
+  border-radius: 3px;
+  border: 2px solid #e62d2d;
+  color: white;
+  font-size: 16px;
+  height: 54px;
+  width: 200px;
+  display: inline-block;
+  padding: 10px;
+  outline: none;
+  margin-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  background-color: #e62d2d;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+form.subscribe-form input[type=submit]:hover {
+  background-color: #d42a2a;
+}
+
+.subscribe-form-wrapper {
   text-align: center;
+  margin: 0 auto;
+  margin-top: 200px;
 }

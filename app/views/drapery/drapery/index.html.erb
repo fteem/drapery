@@ -1,1 +1,11 @@
-<h3 class='center white'>ile</h3>
+<h1 class='center white'>Welcome!</h3>
+
+<h2 class='center white'>We are currently in closed-beta.</h2>
+
+<div class='subscribe-form-wrapper'>
+  <h3 class='center white'>You can request your beta access here:</h3>
+  <%= form_for @subscription, html: { class: 'subscribe-form' } do |f| %>
+    <%= f.text_field :email %>
+    <%= f.submit "Subscribe" %>
+  <% end %>
+</div>

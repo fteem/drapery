@@ -4,6 +4,7 @@ module Drapery
   class DraperyController < ApplicationController
 
     def index
+      @subscription = Subscription.new
       render :index
     end
 
