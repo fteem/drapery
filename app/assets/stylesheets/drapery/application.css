@@ -113,6 +113,7 @@ form.subscribe-form input[type=submit]:hover {
   text-transform: uppercase;
   letter-spacing: 1.3px;
   font-size: 16px;
+  margin-top: 10px;
 }
 
 .flash-error {
@@ -120,4 +121,5 @@ form.subscribe-form input[type=submit]:hover {
   text-transform: uppercase;
   letter-spacing: 1.3px;
   font-size: 16px;
+  margin-top: 10px;
 }
