@@ -7,8 +7,9 @@ module Drapery
     def call(env)
       if Drapery::Engine.is_mounted?
         request_uri = env['REQUEST_URI']
+        puts env['REQUEST_URI']
      
-        unless request_uri =~ /drapery/i || request_uri =~ /subscriptions/i || request_uri =~ /assets$/i
+        unless request_uri =~ /https?:\/\/[a-zA-Z0-9-_\.]*[:0-9]*\/$/i || request_uri =~ /assets/i
           return redirect_to_drapery(request_uri)
         end
       end
@@ -16,7 +17,7 @@ module Drapery
     end
    
     def redirect_to_drapery(uri)
-      [301, {"Location" => uri.sub(/[a-zA-Z0-9\._-]*$/i, "drapery")}, self]
+      [301, {"Location" => uri.sub(/[a-zA-Z0-9\._-]*$/i, "")}, self]
     end
 
     def each(&block)
